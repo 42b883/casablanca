@@ -1,0 +1,163 @@
+#header {
+    background: url("../img/header_bg.jpg") no-repeat center;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    /* flex-direction: column; */
+}
+#header-main {
+    flex: 3;
+}
+
+/* .menu {
+    
+} */
+
+label {
+    font-size: 30px;
+    line-height: 50px;
+    cursor: pointer;
+    color: #fff;
+    display: block;
+    margin: 15px 0 0 25px;
+
+
+}
+
+#toggle {
+    display: none;
+}
+
+#toggle:checked+.menu {
+    display: block;
+}
+
+nav {
+    flex: 1;
+    position: fixed;
+    width: 25%;
+    z-index: 1;
+}
+.menu {
+    
+    width: 100%;
+    height: 100vh;
+    /* background: rgb(140, 204, 204); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    display: none;
+}
+
+nav ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    padding-left: 50%;
+    list-style: none;
+    font-size: 19px;
+    padding: 8px 0 2px 0;
+    width: 70%;
+    border-bottom: 1px solid #000;
+    margin-bottom: 10px;
+    padding-left: 30%;
+}
+
+ul li:hover {
+    color: #ccc;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 250px;
+    color: #ffffff;
+    text-transform: uppercase;
+    width: 35%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#dashline {
+    width: 85px;
+    height: 2px;
+    background: #ffffff;
+    position: relative;
+    top: 255px;
+    margin: 0 auto;
+}
+
+p {
+    /* display: flex;
+    justify-content: center; */
+    margin-top: 35px;
+    position: relative;
+    top: 260px;
+    color: #ffffff;
+    width: 38%;
+    text-align: center;
+    margin: 20px auto;
+}
+
+#span {
+    /* height: 90px;
+    width: 70px;
+    color: #cf2121;
+    margin: 0 auto;
+    /* z-index: 11; */
+    border-radius: 3px;
+    /* position: relative;
+    display: flex;
+    justify-content: center; */ 
+
+    
+        background-color: rgb(255, 255, 255);
+        /* left: 75px;
+        top: 505px;
+        position: relative; */
+        display: block;
+        width: 30px;
+        height: 48px;
+        z-index: 12;
+        border-radius: 20px;
+        position: absolute;
+        top: 85%;
+        left: 50%;
+      
+      
+}
+@media (max-width: 680px) {
+    header {
+        display: flex;
+        flex-direction: column; 
+        height: 1500px;
+    }
+    #header-main {
+        position: absolute;
+        top: 180px;
+    }
+    nav {
+        width: 100%;
+        height: 400px;
+        /* background: darkorange; */
+    }
+    p, h1 {
+        width: 88%;
+        text-align: center;
+    }
+    #span {
+        top: 298%;
+
+    }
+}

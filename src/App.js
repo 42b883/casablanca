@@ -1,25 +1,39 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Header from './components/Header.jsx';
+import Introduction from './components/Introduction.jsx';
 import './App.css';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      engContent: {
+        menu: [
+          {id: 1, content: 'Header'},
+          {id: 2, content: 'Projects'},
+          {id: 3, content: 'Clients'},
+          {id: 4, content: 'About us'},
+          {id: 5, content: 'Why choose us'},
+          {id: 6, content: 'Get in touch'}
+        ],
+        header: {
+          h1: "we've got the talent",
+          p: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
+        },
+        introduction: {
+          h1: "Introduction",
+          p: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+        }
+      }
+    }
+  }
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Header header={this.state.engContent.header.h1}
+        p={this.state.engContent.header.p}
+        menuItems={this.state.engContent.menu} />
+        <Introduction />
       </div>
     );
   }
