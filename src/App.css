@@ -6,7 +6,15 @@ body {
 }
 .App {
   width: 100%;
-  background: rgb(154, 155, 153);
+  background: rgb(196, 255, 138);
   margin: 0;
   padding: 0;
 }
+/* @font-face {
+  font-family: Amble;
+  src: url(fonts/Amble-Regular.ttf);
+}
+@font-face {
+  font-family: 'Big John';
+  src: url(fonts/BIG_JOHN.otf);
+} */

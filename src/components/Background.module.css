@@ -1,0 +1,40 @@
+.BackgroundContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+}
+
+#introBg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    /* background: url("../img/Introduction_bg.jpg") no-repeat center; */
+}
+#introBg img{
+     height: 500px;
+
+}
+
+#introBg span {
+    position: absolute;
+    font-size: 30px;
+    color: #fff;
+    border: 3px solid #fff;
+    padding: 40px 100px;
+    height: 60px;
+    /* width: 390px; */
+    flex-basis: 30%;
+    text-align: center;
+}
+
+@media (max-width: 630px) {
+    #introBg span {
+        display: flex;
+        align-items: center;
+    }
+}

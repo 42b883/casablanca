@@ -11,11 +11,9 @@ class Introduction extends Component {
                     <div id={s.dashline}></div>
                     <p>{this.props.p}</p>
                 </div>
-                <div id={s.introBg}>
+                {/* <div id={s.introBg}>
                     <span>{this.props.bgText}</span>
-                </div>
-
-
+                </div> */}
             </div>
         )
 

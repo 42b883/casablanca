@@ -1,0 +1,13 @@
+.clients {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* #clientsBg {
+    background: url("../img/clients_bg.jpg") no-repeat center;
+    width: 100%;
+    height: 500px;
+    display: flex;
+} */
