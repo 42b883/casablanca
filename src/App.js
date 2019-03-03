@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './components/Header.jsx';
 import Introduction from './components/Introduction.jsx';
+import Projects from './components/Projects.jsx';
 import './App.css';
 
 class App extends Component {
@@ -24,6 +25,10 @@ class App extends Component {
           h1: "Introduction",
           p: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
           bgText: "Pure Creativity."
+        },
+        projects: {
+          h1: "Some of our works",
+          menu: ["All", "Branding", "Weg design", "Mobile UI", "Illustrations"]
         }
       }
     }
@@ -31,13 +36,18 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header header={this.state.engContent.header.h1}
+        <Header 
+        header={this.state.engContent.header.h1}
         p={this.state.engContent.header.p}
         menuItems={this.state.engContent.menu} />
-        <Introduction header={this.state.engContent.introduction.h1}
+        <Introduction 
+        header={this.state.engContent.introduction.h1}
         p={this.state.engContent.introduction.p}
         bgText={this.state.engContent.introduction.bgText}/>
-      </div>
+        <Projects 
+        header={this.state.engContent.projects.h1}
+        menu={this.state.engContent.projects.menu} />
+        </div>
     );
   }
 }
