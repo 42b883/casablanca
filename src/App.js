@@ -22,7 +22,8 @@ class App extends Component {
         },
         introduction: {
           h1: "Introduction",
-          p: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+          p: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+          bgText: "Pure Creativity."
         }
       }
     }
@@ -33,7 +34,9 @@ class App extends Component {
         <Header header={this.state.engContent.header.h1}
         p={this.state.engContent.header.p}
         menuItems={this.state.engContent.menu} />
-        <Introduction />
+        <Introduction header={this.state.engContent.introduction.h1}
+        p={this.state.engContent.introduction.p}
+        bgText={this.state.engContent.introduction.bgText}/>
       </div>
     );
   }

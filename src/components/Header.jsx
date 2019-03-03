@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Header.css';
+import s from './Header.module.css';
 
 class Header extends Component {
 
@@ -10,21 +10,21 @@ class Header extends Component {
         })
         return (
 
-            <header id="header">
+            <header id={s.header}>
                     <nav>
-                        <label htmlFor="toggle">&#9776;</label>
-                        <input type="checkbox" id="toggle"/>
-                        <div className="menu">
+                        <label htmlFor={s.toggle}>&#9776;</label>
+                        <input type="checkbox" id={s.toggle}/>
+                        <div className={s.menu}>
                             <ul>
                                 {menuList}
                             </ul>
                         </div>
                     </nav>
-                <div id="header-main">
+                <div id={s.headerMain}>
                     <h1>{this.props.header}</h1>
-                    <div id="dashline"></div>
+                    <div id={s.dashline}></div>
                     <p>{this.props.p}</p>
-                    <div id="span"></div>
+                    <div id={s.span}></div>
                 </div>
 
 

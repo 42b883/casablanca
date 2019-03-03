@@ -5,7 +5,7 @@
     height: 100vh;
     /* flex-direction: column; */
 }
-#header-main {
+#headerMain {
     flex: 3;
 }
 
@@ -59,15 +59,17 @@ nav ul {
 nav ul li {
     padding-left: 50%;
     list-style: none;
-    font-size: 19px;
-    padding: 8px 0 2px 0;
+    font-size: 22px;
+    padding: 15px 0 30px 0;
     width: 70%;
     border-bottom: 1px solid #000;
     margin-bottom: 10px;
+    margin-top: 10px;
     padding-left: 30%;
+    font-weight: 600;
 }
 
-ul li:hover {
+nav ul li:hover {
     color: #ccc;
 }
 
@@ -76,7 +78,7 @@ nav ul li a {
     color: #ffffff;
 }
 
-h1 {
+#headerMain h1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,6 +89,7 @@ h1 {
     width: 35%;
     margin: 20px auto;
     text-align: center;
+    font-size: 48px;
 }
 
 #dashline {
@@ -98,9 +101,10 @@ h1 {
     margin: 0 auto;
 }
 
-p {
+#headerMain p {
     /* display: flex;
     justify-content: center; */
+    font-size: 22px;
     margin-top: 35px;
     position: relative;
     top: 260px;
@@ -143,7 +147,7 @@ p {
         flex-direction: column; 
         height: 1500px;
     }
-    #header-main {
+    #headerMain {
         position: absolute;
         top: 180px;
     }
@@ -152,12 +156,25 @@ p {
         height: 400px;
         /* background: darkorange; */
     }
-    p, h1 {
+    #headerMain p, h1 {
         width: 88%;
         text-align: center;
     }
+    #headerMain p{
+        top: 85px;
+    }
+    #dashline {
+        top: 80px;
+    }
+    #headerMain h1{
+        top: 75px;
+    }
     #span {
-        top: 298%;
+        top: 500px;
+        position: absolute;
 
+    }
+    .menu {
+        height: 100px;
     }
 }
