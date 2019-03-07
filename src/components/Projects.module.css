@@ -22,7 +22,7 @@
 #dashline {
     width: 86px;
     height: 2px;
-    margin: 0 auto; 
+    margin: 0 auto;
     background: #222;
     margin-bottom: 60px;
     margin-top: 55px;
@@ -45,10 +45,16 @@
 
 #menu ul li {
     list-style: none;
-    padding: 5px 35px 5px 0;
+    padding: 5px 17px 5px 17px;
     text-transform: uppercase;
     color: #515151;
 }
+
+.imageHeading:hover {
+    color: #222;
+    font-weight: 600;
+}
+
 .imgWrapper {
     padding: 20px 215px;
     display: flex;
@@ -56,24 +62,26 @@
     flex-wrap: wrap;
     align-items: center;
 }
+
 .imgWrapper img {
     margin-top: 20px;
     margin-right: 30px;
     height: 420px;
     width: 370px;
 }
+
 #btn {
     display: flex;
     justify-content: center;
     margin: 0 auto;
     width: 370px;
     height: 40px;
-    padding: 10px 0;  
-    border: 3px solid #222222; 
-    background: transparent;     
+    padding: 10px 0;
+    border: 3px solid #222222;
+    background: transparent;
     color: #222222;
     font-size: 24px;
-    font-weight: 400;   
+    font-weight: 400;
     margin-top: 60px;
     margin-bottom: 60px;
 }
@@ -85,21 +93,25 @@
         height: 350px;
         width: 300px;
     }
+
     .imgWrapper {
         padding: 20px 100px;
     }
 }
+
 @media (max-width: 860px) {
     .imgWrapper {
         padding: 20px 50px;
     }
+
     .imgWrapper img {
         height: 310px;
         width: 260px;
     }
 }
+
 @media (max-width: 614px) {
     .imgWrapper img {
-       margin-right: 0;
+        margin-right: 0;
     }
 }

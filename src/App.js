@@ -5,7 +5,11 @@ import Introduction from './components/Introduction.jsx';
 import Projects from './components/Projects.jsx';
 import Clients from './components/Clients.jsx';
 import './App.css';
-{/* <image src="./img/Introduction_bg.jpg"></image> */}
+
+import introBg from './img/Introduction_bg.jpg';
+import clientsBg from './img/clients_bg.jpg';
+
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -32,6 +36,10 @@ class App extends Component {
         projects: {
           h1: "Some of our works",
           menu: ["All", "Branding", "Weg design", "Mobile UI", "Illustrations"]
+        },
+        clients: {
+          h1: "Our clients",
+          bgText: "We're here to help."
         }
       }
     }
@@ -42,7 +50,8 @@ class App extends Component {
         <Header 
         header={this.state.engContent.header.h1}
         p={this.state.engContent.header.p}
-        menuItems={this.state.engContent.menu} />
+        menuItems={this.state.engContent.menu} 
+        />
         <Introduction 
         header={this.state.engContent.introduction.h1}
         p={this.state.engContent.introduction.p}
@@ -50,13 +59,18 @@ class App extends Component {
         />
         <Background 
          bgText={this.state.engContent.introduction.bgText}
+         imgBg={introBg}
          />
         <Projects 
-        header={this.state.engContent.projects.h1}
-        menu={this.state.engContent.projects.menu} />
+        header={this.state.engContent.projects.h1}  
+        menu={this.state.engContent.projects.menu} 
+        />
          <Background 
-         bgText={this.state.engContent.introduction.bgText}/>
-        <Clients />
+         bgText={this.state.engContent.clients.bgText}
+         imgBg={clientsBg}
+         />
+        <Clients header={this.state.engContent.clients.h1}
+        />
         </div>
         
     );
