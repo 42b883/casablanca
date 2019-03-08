@@ -4,6 +4,7 @@ import Background from './components/Background.jsx';
 import Introduction from './components/Introduction.jsx';
 import Projects from './components/Projects.jsx';
 import Clients from './components/Clients.jsx';
+import AboutUs from './components/AboutUs.jsx';
 import './App.css';
 
 import introBg from './img/Introduction_bg.jpg';
@@ -40,6 +41,10 @@ class App extends Component {
         clients: {
           h1: "Our clients",
           bgText: "We're here to help."
+        },
+        aboutus: {
+          h1: "About us",
+          p:  "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
         }
       }
     }
@@ -71,6 +76,10 @@ class App extends Component {
          />
         <Clients header={this.state.engContent.clients.h1}
         />
+        <AboutUs 
+        header={this.state.engContent.aboutus.h1}
+        p={this.state.engContent.aboutus.p}
+         />
         </div>
         
     );

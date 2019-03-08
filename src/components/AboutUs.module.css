@@ -1,0 +1,230 @@
+.introduction {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+
+.personIcon {
+    position: absolute;
+}
+
+/* #introBg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    background: url("../img/Introduction_bg.jpg") no-repeat center;
+}
+#introBg span {
+    font-size: 30px;
+    color: #fff;
+    border: 3px solid #fff;
+    padding: 40px 100px;
+    height: 60px;
+    flex-basis: 30%;
+    text-align: center;
+} */
+
+
+.textWrapper {
+    width: 67%;
+    /* background: #ccccaa; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.introduction p,
+.introduction h1 {
+    text-align: center;
+}
+
+.introduction h1 {
+    margin-top: 100px;
+    color: #222222;
+    margin-bottom: 45px;
+    font-size: 30px;
+}
+
+.introduction p {
+    color: #313131;
+    margin-top: 45px;
+    font-size: 22px;
+    margin-bottom: 100px;
+}
+
+#dashline {
+    width: 86px;
+    height: 2px;
+    margin: 0 auto;
+    background: #222;
+}
+
+#headerMain p {
+    /* display: flex;
+    justify-content: center; */
+    font-size: 22px;
+    margin-top: 35px;
+    position: relative;
+    top: 260px;
+    color: #ffffff;
+    width: 38%;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.personWrap {
+    display: flex;
+    justify-content: center;
+    /* background: #cccc22; */
+    flex-wrap: wrap;
+}
+
+#person1,
+#person2,
+#person3 {
+    border: 3px solid rgba(0, 0, 0, 0);
+    height: 354px;
+    width: 262px;
+    position: relative;
+    margin: 15px;
+}
+
+#person1 {
+    background: url(../img/about/person1.png) top center no-repeat, linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+}
+
+#person2 {
+    background: url(../img/about/person2.png) top center no-repeat, linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+}
+
+#person3 {
+    background: url(../img/about/person3.png) top center no-repeat, linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+}
+
+#person1:hover,
+#person2:hover,
+#person3:hover {
+    border: 3px solid rgba(0, 0, 0, 1);
+    transition: 1800ms;
+    background-position-y: top;
+    transition-timing-function: ease;
+    position: relative;
+}
+
+#person1:hover {
+    background: url(../img/about/person1.png) top center, linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+}
+
+#person2:hover {
+    background: url(../img/about/person2.png) top center, linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+}
+
+#person3:hover {
+    background: url(../img/about/person3.png) top center, linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+}
+
+#hoverInfo {
+    opacity: 0;
+    position: absolute;
+    width: 131px;
+    height: 119px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    top: 235px;
+    right: 67px;
+    transition: 3000ms;
+    transition-timing-function: ease;
+}
+#hoverInfo h3, #hoverInfo p {
+    display: relative;
+    color: #fff;
+}
+#hoverInfo h3 {
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 10px;
+    font-size: 24px;
+    
+}
+#hoverInfo p {
+    margin: 0;
+    font-size: 18px;
+
+}
+
+#person1:hover #hoverInfo, #person2:hover #hoverInfo, #person3:hover #hoverInfo {
+    opacity: 1;
+}
+
+#person1:hover .hoverIcon img, #person2:hover .hoverIcon img, #person3:hover .hoverIcon img {
+    opacity: 1;
+}
+
+.hoverIcon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #000000;
+    top: 0;
+    right: 0;
+    height: 50px;
+    width: 50px;
+    opacity: 0;
+
+}
+
+#apply {
+    border: 1px solid rgb(0, 0, 0);
+    height: 354px;
+    width: 262px;
+    position: relative;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+#apply:hover {
+    border: 1px solid rgb(240, 240, 240);
+    background: #f3f3f3;   
+}
+
+#applyHover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#applyHover h2 {
+    width: 100px;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #222222;
+    font-weight: 720;
+}
+#applyHover h3{
+    width: 185px;
+    height: 60px;
+    font-size: 25px;
+    font-weight: 400;
+    border: 3px solid #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#applyHover h3:hover {
+    background: darkgrey;
+    border: 3px solid rgb(82, 82, 82);
+    color: #000;
+    transition: 500ms;
+    transition-timing-function: ease-in-out;
+}
+
