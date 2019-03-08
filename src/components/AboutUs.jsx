@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 // import s from './Introduction.module.css';
 import s2 from './AboutUs.module.css';
+import hoverIcon from '../img/about/hoverIcon.png';
 
 class AboutUs extends Component {
 
@@ -16,9 +17,9 @@ class AboutUs extends Component {
                     <div className={s2.personWrap}>
                         <div className={s2.person}>
                             <div id={s2.person1}>
-                                <a href="#" className={s2.hoverIcon}>
-                                    <img src="../img/about/hoverIcon.png" alt="" />
-                                </a>
+                            <div className={s2.hoverIcon}>
+                                    <img src={hoverIcon} alt="icon" />
+                                </div>
                                 <div id={s2.hoverInfo}>
                                     <h3>John</h3>
                                     <p>CEO/founder</p>
@@ -28,18 +29,18 @@ class AboutUs extends Component {
                         </div>
 
                         <div id={s2.person2}>
-                        <a href="#" className={s2.hoverIcon}>
-                                    <img src="../img/about/hoverIcon.png" alt="" />
-                                </a>
+                        <div className={s2.hoverIcon}>
+                                    <img src={hoverIcon} alt="icon" />
+                                </div>
                                 <div id={s2.hoverInfo}>
                                     <h3>Helsey</h3>
                                     <p>Backend dev</p>
                                 </div>
                         </div>
                         <div id={s2.person3}>
-                        <a href="#" className={s2.hoverIcon}>
-                                    <img src="../img/about/hoverIcon.png" alt="" />
-                                </a>
+                        <div className={s2.hoverIcon}>
+                                    <img src={hoverIcon} alt="icon" />
+                                </div>
                                 <div id={s2.hoverInfo}>
                                     <h3>Kelsey</h3>
                                     <p>Frontend dev</p>

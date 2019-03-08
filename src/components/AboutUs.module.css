@@ -167,19 +167,22 @@
     opacity: 1;
 }
 
-.hoverIcon {
+.hoverIcon img{
     position: absolute;
-    width: 30px;
-    height: 30px;
-    background: #000000;
-    top: 0;
-    right: 0;
-    height: 50px;
-    width: 50px;
+    top: 10px;
+    right: 10px;
     opacity: 0;
-
+    transition: 1000ms;
 }
 
+.hoverIcon img:hover {
+    opacity: 1;
+}
+#person1:hover .hoverIcon img,
+#person2:hover .hoverIcon img,
+#person3:hover .hoverIcon img {
+    opacity: 1;
+}
 #apply {
     border: 1px solid rgb(0, 0, 0);
     height: 354px;
@@ -221,6 +224,7 @@
     align-items: center;
 }
 #applyHover h3:hover {
+    cursor: pointer;
     background: darkgrey;
     border: 3px solid rgb(82, 82, 82);
     color: #000;
