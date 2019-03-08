@@ -5,6 +5,7 @@
     align-items: center;
     background: #ffffff;
     box-sizing: border-box;
+    padding-bottom: 70px;
 }
 
 .personIcon {
@@ -48,6 +49,7 @@
     color: #222222;
     margin-bottom: 45px;
     font-size: 30px;
+    text-transform: uppercase;
 }
 
 .introduction p {

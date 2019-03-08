@@ -5,6 +5,7 @@ import Introduction from './components/Introduction.jsx';
 import Projects from './components/Projects.jsx';
 import Clients from './components/Clients.jsx';
 import AboutUs from './components/AboutUs.jsx';
+import Video from './components/Video.jsx';
 import './App.css';
 
 import introBg from './img/Introduction_bg.jpg';
@@ -80,6 +81,7 @@ class App extends Component {
         header={this.state.engContent.aboutus.h1}
         p={this.state.engContent.aboutus.p}
          />
+         <Video />
         </div>
         
     );
