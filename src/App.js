@@ -6,6 +6,9 @@ import Projects from './components/Projects.jsx';
 import Clients from './components/Clients.jsx';
 import AboutUs from './components/AboutUs.jsx';
 import Video from './components/Video.jsx';
+import WhyChooseUs from './components/whyChooseUsSection/WhyChooseUs.jsx';
+import Slider from './components/whyChooseUsSection/slider/container/Slider.jsx';
+
 import './App.css';
 
 import introBg from './img/Introduction_bg.jpg';
@@ -46,6 +49,10 @@ class App extends Component {
         aboutus: {
           h1: "About us",
           p:  "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+        },
+        whychooseus: {
+          h1: "Why choose us",
+          p: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
         }
       }
     }
@@ -82,6 +89,11 @@ class App extends Component {
         p={this.state.engContent.aboutus.p}
          />
          <Video />
+         <WhyChooseUs 
+          header={this.state.engContent.whychooseus.h1}
+          p={this.state.engContent.whychooseus.p}
+         />
+         <Slider />         
         </div>
         
     );
