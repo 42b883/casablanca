@@ -13,6 +13,7 @@ import './App.css';
 
 import introBg from './img/Introduction_bg.jpg';
 import clientsBg from './img/clients_bg.jpg';
+import getintouch from './img/getintouch_bg.jpg';
 
 
 class App extends Component {
@@ -52,7 +53,9 @@ class App extends Component {
         },
         whychooseus: {
           h1: "Why choose us",
-          p: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+          p: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+          bgText: "Get a quote now.",
+          bgimage: './img/getintouch_bg.jpg'
         }
       }
     }
@@ -93,7 +96,11 @@ class App extends Component {
           header={this.state.engContent.whychooseus.h1}
           p={this.state.engContent.whychooseus.p}
          />
-         <Slider />         
+         <Slider />      
+         <Background 
+         bgText={this.state.engContent.whychooseus.bgText}
+         imgBg={getintouch}
+         />   
         </div>
         
     );

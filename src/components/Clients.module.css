@@ -37,6 +37,9 @@
     margin-right: 45px;
     margin-left: 45px;
     margin-top: 30px;
+    animation: iRotation 2s ease 3s infinite;
+    animation-iteration-count: 6;
+  animation-direction: alternate; 
 }
 
 /* #clientsBg {
@@ -45,3 +48,29 @@
     height: 500px;
     display: flex;
 } */
+
+
+@keyframes iRotation{
+    0% {
+        transform:rotate(0deg);
+        color: #fff;
+    }
+    25%{
+        transform:rotate(25deg);
+        color: rgb(87, 0, 248);
+    }
+    50%{
+        transform:rotate(80deg);
+        color: rgb(5, 2, 2);
+    }
+    75% {
+        transform:rotate(180deg);
+        color: rgb(255, 14, 14);
+    }
+    100% {
+        transform:rotate(360deg);
+        color: rgb(0, 109, 0);
+    }
+
+    
+}
