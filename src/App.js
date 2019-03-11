@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import Header from './components/Header.jsx';
 import Background from './components/Background.jsx';
 import Introduction from './components/Introduction.jsx';
-import Projects from './components/Projects.jsx';
+import Projects from './components/projects/Projects.jsx';
 import Clients from './components/Clients.jsx';
 import AboutUs from './components/AboutUs.jsx';
 import Video from './components/Video.jsx';
 import WhyChooseUs from './components/whyChooseUsSection/WhyChooseUs.jsx';
 import Slider from './components/whyChooseUsSection/slider/container/Slider.jsx';
+import PhotoGallery from './components/projects/PhotoGallery.jsx';
 
 import './App.css';
 
@@ -100,7 +101,7 @@ class App extends Component {
          <Background 
          bgText={this.state.engContent.whychooseus.bgText}
          imgBg={getintouch}
-         />   
+         /> 
         </div>
         
     );
