@@ -9,6 +9,8 @@ import Video from './components/Video.jsx';
 import WhyChooseUs from './components/whyChooseUsSection/WhyChooseUs.jsx';
 import Slider from './components/whyChooseUsSection/slider/container/Slider.jsx';
 import PhotoGallery from './components/projects/PhotoGallery.jsx';
+import GetInTouch from './components/GetInTouch.jsx';
+import Footer from './components/Footer.jsx';
 
 import './App.css';
 
@@ -57,7 +59,20 @@ class App extends Component {
           p: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
           bgText: "Get a quote now.",
           bgimage: './img/getintouch_bg.jpg'
+        },
+        getintouch: {
+          h1: "Get in touch",
+          p: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+          locationHeader: "Our location",
+          address: "174 Mimosa ST. NW Casablanca, MA 20370 (212) 123 456 7 Samir Timezguida"
+        },
+        footerContent: {
+          footerHeader: "Samir Tiezguida.",
+          spec: "UI/UX & Web Designer",
+          year: "All Rights Reserved."
+
         }
+
       }
     }
   }
@@ -102,6 +117,17 @@ class App extends Component {
          bgText={this.state.engContent.whychooseus.bgText}
          imgBg={getintouch}
          /> 
+         <GetInTouch
+          header={this.state.engContent.getintouch.h1}
+          p={this.state.engContent.getintouch.p}
+          locationHeader={this.state.engContent.getintouch.locationHeader}
+          address={this.state.engContent.getintouch.address}
+          />
+          <Footer 
+          footerHeader={this.state.engContent.footerContent.footerHeader}
+          spec={this.state.engContent.footerContent.spec}
+          year={this.state.engContent.footerContent.year}
+          />
         </div>
         
     );

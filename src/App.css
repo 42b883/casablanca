@@ -3,6 +3,7 @@ body {
   background: darkolivegreen;
   margin: 0;
   padding: 0; */
+  box-sizing: border-box;
 }
 .App {
   width: 100%;
@@ -145,3 +146,9 @@ body {
   color: rgb(77, 77, 77);
 }
 
+.fab {
+  margin-left: 0 15px;
+  font-size: 25px;
+  size: 40px;
+  height: 30px;
+}
