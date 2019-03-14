@@ -16,6 +16,7 @@ footer {
 }
 
 #wrap {
+    
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -56,3 +57,43 @@ footer img {
 #owner {
     color: #d87843;
 }
+
+@media (max-width: 430px) {
+    /* footer #wrap {
+        width: 100%;  
+    } */
+    #Footer_wrap__2OAeO {
+        width: 100P;
+    }
+    #contentWrapper {
+        width: 80%;
+    }
+    #header {
+        justify-content: center;
+        display: flex;
+    }
+
+    footer {
+        height: 100%;
+        padding-bottom: 30px;
+    }
+    
+    footer img {
+      margin-top: 80px;
+      margin-bottom: 30px;
+  }
+  
+  
+  #header h1 {
+      margin: 6px 0 22px 21%;
+      line-height: 2;
+  }
+  #header span {
+      top: 60px;
+  }
+  
+  #wrap {
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+  }
