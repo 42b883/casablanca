@@ -151,7 +151,18 @@ body {
   font-size: 25px;
   size: 40px;
   height: 30px;
+  cursor: pointer;
 }
 .fab:hover {
   color: #d87843;
+}
+
+@media (max-width: 700px){
+  .nextArrow {
+    left: 57%;
+  }
+}
+
+.backArrow {
+  left: 45%;
 }
