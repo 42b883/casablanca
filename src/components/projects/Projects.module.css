@@ -82,6 +82,8 @@
     margin-left: 15px;
     height: 420px;
     width: 370px;
+    animation: flip 4s cubic-bezier(0.6, -0.28, 0.735, 0.045) alternate 4;
+    animation-delay: 10s;
 }
 
 #textHover {
@@ -204,5 +206,15 @@
     #textHover {
         width: 89%;
         height: 87%;
+    }
+}
+
+
+@keyframes flip {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(180deg);
     }
 }
