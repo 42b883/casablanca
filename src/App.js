@@ -23,6 +23,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      lang: 'english',
       engContent: {
         menu: [
           {id: 1, content: 'Header'},
@@ -73,64 +74,237 @@ class App extends Component {
 
         }
 
+      },
+      rusContent: {
+        menu: [
+          {id: 1, content: 'Header'},
+          {id: 2, content: 'Projects'},
+          {id: 3, content: 'Clients'},
+          {id: 4, content: 'About us'},
+          {id: 5, content: 'Why choose us'},
+          {id: 6, content: 'Get in touch'}
+        ],
+        header: {
+          h1: "У нас есть таланты",
+          p: "Значимость этих проблем настолько очевидна"
+        },
+        introduction: {
+          h1: "Introduction",
+          p: "Имеется спорная точка зрения, гласящая примерно следующее: элементы политического процесса набирают популярность среди определенных слоев населения, а значит, должны быть.",
+          bgText: "Pure Creativity.",
+          bgImage: "'./img/Introduction_bg.jpg'"
+        },
+        projects: {
+          h1: "Some of our works",
+          menu: ["All", "Branding", "Weg design", "Mobile UI", "Illustrations"]
+        },
+        clients: {
+          h1: "Our clients",
+          bgText: "We're here to help."
+        },
+        aboutus: {
+          h1: "About us",
+          p:  "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+        },
+        whychooseus: {
+          h1: "Why choose us",
+          p: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+          bgText: "Get a quote now.",
+          bgimage: './img/getintouch_bg.jpg'
+        },
+        getintouch: {
+          h1: "Get in touch",
+          p: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+          locationHeader: "Our location",
+          address: "174 Mimosa ST. NW Casablanca, MA 20370 (212) 123 456 7 Samir Timezguida"
+        },
+        footerContent: {
+          footerHeader: "Samir Tiezguida.",
+          spec: "UI/UX & Web Designer",
+          year: "All Rights Reserved."
+
+        }
       }
     }
   }
+
+  getLang = (selectedLang) => {
+    let lang = selectedLang;
+      this.setState({
+        lang
+      })
+  }
+
   render() {
-    return (
-      <div className="App">
-        <Header 
-        header={this.state.engContent.header.h1}
-        p={this.state.engContent.header.p}
-        menuItems={this.state.engContent.menu} 
-        />
-        <Introduction 
-        header={this.state.engContent.introduction.h1}
-        p={this.state.engContent.introduction.p}
-        bgText={this.state.engContent.introduction.bgText}
-        />
-        <Background 
-         bgText={this.state.engContent.introduction.bgText}
-         imgBg={introBg}
-         />
-        <Projects 
-        header={this.state.engContent.projects.h1}  
-        menu={this.state.engContent.projects.menu} 
-        />
-         <Background 
-         bgText={this.state.engContent.clients.bgText}
-         imgBg={clientsBg}
-         />
-        <Clients header={this.state.engContent.clients.h1}
-        />
-        <AboutUs 
-        header={this.state.engContent.aboutus.h1}
-        p={this.state.engContent.aboutus.p}
-         />
-         <Video />
-         <WhyChooseUs 
-          header={this.state.engContent.whychooseus.h1}
-          p={this.state.engContent.whychooseus.p}
-         />
-         <Slider />      
-         <Background 
-         bgText={this.state.engContent.whychooseus.bgText}
-         imgBg={getintouch}
-         /> 
-         <GetInTouch
-          header={this.state.engContent.getintouch.h1}
-          p={this.state.engContent.getintouch.p}
-          locationHeader={this.state.engContent.getintouch.locationHeader}
-          address={this.state.engContent.getintouch.address}
+    const currentLang = null;
+    if(this.state.lang === 'русский') {
+      return (
+        <div className="App">
+          <Header 
+          getLang={this.getLang}
+          header={this.state.rusContent.header.h1}
+          p={this.state.rusContent.header.p}
+          menuItems={this.state.rusContent.menu} 
           />
-          <Footer 
-          footerHeader={this.state.engContent.footerContent.footerHeader}
-          spec={this.state.engContent.footerContent.spec}
-          year={this.state.engContent.footerContent.year}
+          <Introduction 
+          header={this.state.engContent.introduction.h1}
+          p={this.state.rusContent.introduction.p}
+          bgText={this.state.engContent.introduction.bgText}
           />
-        </div>
+          <Background 
+           bgText={this.state.engContent.introduction.bgText}
+           imgBg={introBg}
+           />
+          <Projects 
+          header={this.state.engContent.projects.h1}  
+          menu={this.state.engContent.projects.menu} 
+          />
+           <Background 
+           bgText={this.state.engContent.clients.bgText}
+           imgBg={clientsBg}
+           />
+          <Clients header={this.state.engContent.clients.h1}
+          />
+          <AboutUs 
+          header={this.state.engContent.aboutus.h1}
+          p={this.state.engContent.aboutus.p}
+           />
+           <Video />
+           <WhyChooseUs 
+            header={this.state.engContent.whychooseus.h1}
+            p={this.state.engContent.whychooseus.p}
+           />
+           <Slider />      
+           <Background 
+           bgText={this.state.engContent.whychooseus.bgText}
+           imgBg={getintouch}
+           /> 
+           <GetInTouch
+            header={this.state.engContent.getintouch.h1}
+            p={this.state.engContent.getintouch.p}
+            locationHeader={this.state.engContent.getintouch.locationHeader}
+            address={this.state.engContent.getintouch.address}
+            />
+            <Footer 
+            footerHeader={this.state.engContent.footerContent.footerHeader}
+            spec={this.state.engContent.footerContent.spec}
+            year={this.state.engContent.footerContent.year}
+            />
+          </div>
+          
+      );
+    } else {
+      return (
+        <div className="App">
+          <Header 
+          getLang={this.getLang}
+          header={this.state.engContent.header.h1}
+          p={this.state.engContent.header.p}
+          menuItems={this.state.engContent.menu} 
+          />
+          <Introduction 
+          header={this.state.engContent.introduction.h1}
+          p={this.state.engContent.introduction.p}
+          bgText={this.state.engContent.introduction.bgText}
+          />
+          <Background 
+           bgText={this.state.engContent.introduction.bgText}
+           imgBg={introBg}
+           />
+          <Projects 
+          header={this.state.engContent.projects.h1}  
+          menu={this.state.engContent.projects.menu} 
+          />
+           <Background 
+           bgText={this.state.engContent.clients.bgText}
+           imgBg={clientsBg}
+           />
+          <Clients header={this.state.engContent.clients.h1}
+          />
+          <AboutUs 
+          header={this.state.engContent.aboutus.h1}
+          p={this.state.engContent.aboutus.p}
+           />
+           <Video />
+           <WhyChooseUs 
+            header={this.state.engContent.whychooseus.h1}
+            p={this.state.engContent.whychooseus.p}
+           />
+           <Slider />      
+           <Background 
+           bgText={this.state.engContent.whychooseus.bgText}
+           imgBg={getintouch}
+           /> 
+           <GetInTouch
+            header={this.state.engContent.getintouch.h1}
+            p={this.state.engContent.getintouch.p}
+            locationHeader={this.state.engContent.getintouch.locationHeader}
+            address={this.state.engContent.getintouch.address}
+            />
+            <Footer 
+            footerHeader={this.state.engContent.footerContent.footerHeader}
+            spec={this.state.engContent.footerContent.spec}
+            year={this.state.engContent.footerContent.year}
+            />
+          </div>
+          
+      ); 
+    }
+    // return (
+    //   <div className="App">
+    //     <Header 
+    //     getLang={this.getLang}
+    //     header={this.state.engContent.header.h1}
+    //     p={this.state.engContent.header.p}
+    //     menuItems={this.state.engContent.menu} 
+    //     />
+    //     <Introduction 
+    //     header={this.state.engContent.introduction.h1}
+    //     p={this.state.engContent.introduction.p}
+    //     bgText={this.state.engContent.introduction.bgText}
+    //     />
+    //     <Background 
+    //      bgText={this.state.engContent.introduction.bgText}
+    //      imgBg={introBg}
+    //      />
+    //     <Projects 
+    //     header={this.state.engContent.projects.h1}  
+    //     menu={this.state.engContent.projects.menu} 
+    //     />
+    //      <Background 
+    //      bgText={this.state.engContent.clients.bgText}
+    //      imgBg={clientsBg}
+    //      />
+    //     <Clients header={this.state.engContent.clients.h1}
+    //     />
+    //     <AboutUs 
+    //     header={this.state.engContent.aboutus.h1}
+    //     p={this.state.engContent.aboutus.p}
+    //      />
+    //      <Video />
+    //      <WhyChooseUs 
+    //       header={this.state.engContent.whychooseus.h1}
+    //       p={this.state.engContent.whychooseus.p}
+    //      />
+    //      <Slider />      
+    //      <Background 
+    //      bgText={this.state.engContent.whychooseus.bgText}
+    //      imgBg={getintouch}
+    //      /> 
+    //      <GetInTouch
+    //       header={this.state.engContent.getintouch.h1}
+    //       p={this.state.engContent.getintouch.p}
+    //       locationHeader={this.state.engContent.getintouch.locationHeader}
+    //       address={this.state.engContent.getintouch.address}
+    //       />
+    //       <Footer 
+    //       footerHeader={this.state.engContent.footerContent.footerHeader}
+    //       spec={this.state.engContent.footerContent.spec}
+    //       year={this.state.engContent.footerContent.year}
+    //       />
+    //     </div>
         
-    );
+    // );
   }
 }
 

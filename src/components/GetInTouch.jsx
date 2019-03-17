@@ -18,10 +18,10 @@ class GetInTouch extends Component {
                                 <h1>{this.props.locationHeader}</h1>
                                 <span>{this.props.address}</span>
                                 <div id={s.logos}>
-                                <i class="fab fa-twitter"></i>
-                                <i class="fab fa-facebook-f"></i>
-                                <i class="fab fa-vimeo-v"></i>
-                                <i class="fab fa-behance-square"></i>
+                                <i className="fab fa-twitter"></i>
+                                <i className="fab fa-facebook-f"></i>
+                                <i className="fab fa-vimeo-v"></i>
+                                <i className="fab fa-behance-square"></i>
                                 </div>
                             </div>
                         </div>

@@ -2,6 +2,29 @@ import React, { Component } from 'react';
 import s from './Header.module.css';
 
 class Header extends Component {
+    constructor(props) {
+        super(props) 
+        this.state = {
+            lang: 'русский'
+        }
+    }
+
+
+    changeLang = (e) => {
+        const {value} = e.target;
+        if(this.state.lang === 'english') {
+            this.setState({
+                lang: 'русский'
+            })
+        } else {
+        this.setState({
+           lang: 'english'
+        })
+    }
+    this.props.getLang(this.state.lang);
+    }
+
+
 
     render() {
 
@@ -12,8 +35,14 @@ class Header extends Component {
 
             <header id={s.header}>
                     <nav>
+                        <div id={s.toggleWrap}>
                         <label htmlFor={s.toggle}>&#9776;</label>
+                        <div id={s.lang}>
+                            <span onClick={this.changeLang}>{this.state.lang}</span> 
+                        </div>
+                        </div>
                         <input type="checkbox" id={s.toggle}/>
+
                         <div className={s.menu}>
                             <ul>
                                 {menuList}
