@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/42b883.github.io/casablanca/precache-manifest.9b67996eafdc84b606b6d8f11c24c4a5.js"
+  "/casablanca/precache-manifest.011995fc7d29c17a8a84315cd634b19a.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/42b883.github.io/casablanca/index.html", {
+workbox.routing.registerNavigationRoute("/casablanca/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
