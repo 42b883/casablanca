@@ -94,21 +94,12 @@ class App extends Component {
       },
       rusContent: {
         menu: [
-<<<<<<< HEAD
           {id: 1, content: 'Главное', identify: '#Header_header__2c9_s'},
           {id: 2, content: 'Проекты', identify: '#Projects_projects__2rWae'},
           {id: 3, content: 'Клиенты', identify: '#Clients_clients__ww87K'},
           {id: 4, content: 'О нас', identify: '#AboutUs_introduction__cK_9U'},
           {id: 5, content: 'Почему мы', identify: '#WhyChooseUs_introduction__g_Bdl'},
           {id: 6, content: 'Связаться', identify: '#GetInTouch_introduction__3EW95'}
-=======
-          {id: 1, content: 'Начало'},
-          {id: 2, content: 'Проекты'},
-          {id: 3, content: 'Клиенты'},
-          {id: 4, content: 'О нас'},
-          {id: 5, content: 'Почему мы'},
-          {id: 6, content: 'Связаться'}
->>>>>>> 6fbe72a8eec55ddd2623f3c3b294cbd483e98bc6
         ],
         header: {
           h1: "У нас есть таланты",
