@@ -1,27 +1,27 @@
 self.__precacheManifest = [
   {
-    "revision": "e0c27c5a324e5e45e9fe",
-    "url": "/42b883.github.io/casablanca/static/css/main.1a77a8e2.chunk.css"
+    "revision": "a857db129ebec0f8d540",
+    "url": "/42b883.github.io/casablanca/static/css/main.f54289d8.chunk.css"
   },
   {
-    "revision": "e0c27c5a324e5e45e9fe",
-    "url": "/42b883.github.io/casablanca/static/js/main.e0c27c5a.chunk.js"
+    "revision": "a857db129ebec0f8d540",
+    "url": "/42b883.github.io/casablanca/static/js/main.bc98c8f2.chunk.js"
   },
   {
-    "revision": "158e85eb7437b7566443",
-    "url": "/42b883.github.io/casablanca/static/js/runtime~main.158e85eb.js"
+    "revision": "0e9ebf68518a9032ed64",
+    "url": "/42b883.github.io/casablanca/static/js/runtime~main.020cddd1.js"
   },
   {
-    "revision": "464f2903519fb3068afc",
-    "url": "/42b883.github.io/casablanca/static/js/2.464f2903.chunk.js"
-  },
-  {
-    "revision": "49d29e31f953ccd0b36417c8a0f04cdf",
-    "url": "/42b883.github.io/casablanca/static/media/person1.49d29e31.png"
+    "revision": "68c09d653bb6f21a2058",
+    "url": "/42b883.github.io/casablanca/static/js/2.b20d9877.chunk.js"
   },
   {
     "revision": "8ef7fff061662d4148c856ed5cff1e81",
     "url": "/42b883.github.io/casablanca/static/media/person2.8ef7fff0.png"
+  },
+  {
+    "revision": "49d29e31f953ccd0b36417c8a0f04cdf",
+    "url": "/42b883.github.io/casablanca/static/media/person1.49d29e31.png"
   },
   {
     "revision": "1555f0f2d48901f114f6e4c93da64dfc",
@@ -84,7 +84,7 @@ self.__precacheManifest = [
     "url": "/42b883.github.io/casablanca/static/media/footer__icon.42619b81.jpg"
   },
   {
-    "revision": "2cf628283fb0b4be2d92de8e7f519dfd",
+    "revision": "91e79c821a80c082c82f7ba9d9edd4b5",
     "url": "/42b883.github.io/casablanca/index.html"
   }
 ];
