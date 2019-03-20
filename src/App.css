@@ -1,4 +1,14 @@
+@font-face {
+  font-family: Amble;
+  src: url("http://www.fontsquirrel.com/fonts/amble");
+}
+@font-face {
+  font-family: 'Big John';
+  src: url("http://bit.ly/1rxB4i6");
+}
+
 body {
+  font-family: 'Amble', sans-serif;
   /* width: 100%;
   background: darkolivegreen;
   margin: 0;
