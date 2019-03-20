@@ -64,7 +64,11 @@ class Slider extends React.Component {
                   {/* <div id="imgContainer"> */}
                   {
                         this.state.images.map((image, i) => (
-                            <Slide key={i} image={image} />
+                            <Slide 
+                            h2={this.props.h2}
+                            p2={this.props.p2}
+                             key={i} 
+                             image={image} />
                         ))
                     }
                   {/* </div> */}

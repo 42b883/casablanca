@@ -17,7 +17,7 @@ class Clients extends Component {
 
     render() {
         return (
-            <div className={s.clients}>
+            <div id={s.clients}>
             <h1>{this.props.header}</h1>
                 <div id={s.dashline}></div>
                 <div className={s.wrapper}>

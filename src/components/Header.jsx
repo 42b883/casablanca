@@ -29,7 +29,7 @@ class Header extends Component {
     render() {
 
         const menuList = this.props.menuItems.map(item => {
-            return <li key={item.id}>{item.content}</li>
+            return <li  key={item.id}><a href={item.identify}>{item.content}</a></li>
         })
         return (
 

@@ -18,7 +18,7 @@ class Projects extends Component {
                     <div id={s.dashline}></div>
                     <PhotoGallery />
                     <div id={s.btnWrapper}>
-                        <div id={s.btn}>Show me more</div>
+                        <div id={s.btn}>{this.props.showBtn}</div>
                     </div>
                 </div>
             </div>

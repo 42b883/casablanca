@@ -5,7 +5,7 @@ class WhyChooseUs extends Component {
 
     render() {
         return (
-            <div className={s.introduction}>
+            <div id={s.introduction}>
                 <div className={s.textWrapper}>
                     <h1>{this.props.header}</h1>
                     <div id={s.dashline}></div>

@@ -7,7 +7,7 @@ import webDesign1 from "../../img/projects/projects_webDesign1.jpg";
 import mobileUI1 from "../../img/projects/projects_mobileUI1.jpg";
 
 
-const PHOTODATA = [{
+let PHOTODATA = [{
     id: 1,
     category: 'branding',
     imageUrl: branding1,

@@ -40,11 +40,11 @@
 #lang span {
     cursor: pointer;
     font-size: 18px;
-    color: rgba(204, 83, 2, 0.979);
+    color: rgb(139, 56, 0);
 }
 
 #lang>span:hover {
-color: rgb(255, 255, 255);
+color: rgb(141, 0, 0);
 }
 #toggle {
     display: none;
@@ -96,8 +96,8 @@ box-shadow:  rgba(0,0,0,0.3);
     color: rgb(255, 255, 255);
 }
 
-#header nav ul li:hover {
-    color: rgb(0, 0, 0);
+#header nav ul li a:hover {
+    color: rgb(255, 92, 92);
 }
 
 #header nav ul li a {

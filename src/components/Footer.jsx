@@ -6,7 +6,7 @@ class Footer extends Component {
 
     render() {
         return (
-           <footer>
+           <footer id="footer">
                <div id={s.contentWrapper}>
                <div id={s.wrap}>
                <img src={footerIcon} alt="footer icon"/>

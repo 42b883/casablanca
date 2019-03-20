@@ -5,7 +5,7 @@ class GetInTouch extends Component {
 
     render() {
         return (
-            <div className={s.introduction}>
+            <div id={s.introduction}>
                 <div className={s.textWrapper}>
                     <h1>{this.props.header}</h1>
                     <div id={s.dashline}></div>
@@ -28,19 +28,23 @@ class GetInTouch extends Component {
                         <div id={s.submitBlock}>
                             <div id={s.submitItem}>
                             <input 
+                            name="name"
                              id={s.nameInput} 
                              type="text"
-                             placeholder="Name"
+                             placeholder={this.props.placeholderText}
                              />
                             <input 
+                            name="email"
                             type="email"
-                            placeholder="Email"/>
+                            placeholder={this.props.placeholderEmail}
+                            />
                             <input
+                            name="message"
                              id={s.emailInput} 
                              type="text"
-                             placeholder="Message"
+                             placeholder={this.props.placeholderMessage}
                              />
-                            <input value="Send" type="submit"/>
+                            <input value={this.props.send} type="submit"/>
                             </div>
                         </div>
                     </div>
